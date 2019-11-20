@@ -32,37 +32,37 @@ This approach will allow to keep and persist pipelines over multiple restarts an
 
 1. Create SDC as App Service
     1. **Add**.
-![alt_text](images/Azure-App0.png "image_tooltip"){ width=200px}
+![alt_text](images/Azure-App0.png "image_tooltip")
     2. After adding app service name, resource group, app service plan click on **Next**.
     3. Choose for Image Source = Docker Hub
 
         Image and tag = streamsets/datacollector:latest. Alternatively, choose your own derived Docker DataCollector image.
 
 
-![alt_text](images/Azure-App1.png "image_tooltip"){ width=200px}
+![alt_text](images/Azure-App1.png "image_tooltip")
     4. Complete the creation of the App Service.
 
 2. Create Azure storage container
     1. Go to your storage account and add a container.
 
-![alt_text](images/Azure-App2.png "image_tooltip"){ width=200px}
+![alt_text](images/Azure-App2.png "image_tooltip")
 
    2. Add the container name and choose public access-type = Blob.
 
-![alt_text](images/Azure-App3.png "image_tooltip"){ width=200px}
+![alt_text](images/Azure-App3.png "image_tooltip")
 
 3. Mount SDC paths to Azure Containers.
   1. Go to the App Service -> **Configuration** -> **Path mappings**.
 
-![alt_text](images/Azure-App4.png "image_tooltip"){ width=200px}
+![alt_text](images/Azure-App4.png "image_tooltip")
 
   2. Add “New Azure Storage Mount”.
-![alt_text](images/Azure-App5.png "image_tooltip"){ width=200px}
+![alt_text](images/Azure-App5.png "image_tooltip")
 
 3. Click **Ok** .
 
 
-![alt_text](images/Azure-App6.png "image_tooltip"){ width=200px}
+![alt_text](images/Azure-App6.png "image_tooltip")
 
 4. Restart App Service.
 
